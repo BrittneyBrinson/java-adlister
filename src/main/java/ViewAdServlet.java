@@ -4,11 +4,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
-
-    @WebServlet(name = "ViewAdServlet", urlPatterns = "/ads")
+//CONTROLLER 2
+    @WebServlet("/ads")
     public class ViewAdServlet extends HttpServlet {
-        protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            Ads adsDao = DaoFactory.getAdsDao();
+            List<Ad> ads = adsDao.all();
+            request.setAttribute("ads", ads);
             request.getRequestDispatcher("/ads.jsp").forward(request, response);
         }
 }

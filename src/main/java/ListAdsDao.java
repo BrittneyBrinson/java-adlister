@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//DOA IMPLEMENTATION
 public class ListAdsDao implements Ads {
     private List<Ad> ads;
 

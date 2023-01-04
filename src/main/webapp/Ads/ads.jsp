@@ -5,12 +5,15 @@
   Time: 12:15 AM
   To change this template use File | Settings | File Templates.
 --%>
+<%--VIEW--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>View all ads</title>
 </head>
 <body>
+<form action="ads.jsp" method="post">
 
+</form>
 </body>
 </html>

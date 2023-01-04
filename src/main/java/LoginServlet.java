@@ -3,7 +3,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+//CONTROLLER 1
 public class LoginServlet {
     @WebServlet(name = "loginServlet", urlPatterns = "/login")
     class loginServlet extends HttpServlet {
