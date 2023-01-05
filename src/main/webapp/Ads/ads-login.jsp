@@ -12,8 +12,11 @@
     <title>Brittney's List</title>
 </head>
 <body>
-<form>
-
+<form action="/login" method="post">
+    <label>Please enter your Username</label>
+    <input type="text" name="username">
+    <label>Next, enter your password</label>
+    <input type="password" name="password">
 </form>
 </body>
 </html>
