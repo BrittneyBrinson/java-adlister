@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "CountServlet", urlPatterns = "/countpage") //I have /count already mapped somewhere
+@WebServlet(name = "CountServlet", urlPatterns = "/countpage") //I have "/count" already mapped somewhere
 public class CountServlet extends HttpServlet {
     protected int x = 0;
     @Override
