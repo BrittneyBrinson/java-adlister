@@ -8,22 +8,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8"%>
-<%
-    @WebServlet(name = "PizzaOrderServlet", urlPatterns = "/pizza-order.jsp")
-    class PizzaServlet extends HttpServlet {
-        @Override
-        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-            String sauce = request.getParameter("sauce");
-            String crust = request.getParameter("crust");
-            request.setAttribute("sauce", sauce);
-            request.setAttribute("crust", crust);
-            request.getRequestDispatcher("/pizza-order.jsp").forward(request,response);
-            System.out.println(crust);
-            System.out.println(sauce);
-
-        }
-    }
-%>
 <html>
 <head>
     <title>Brittney's Pizza Shack</title>
