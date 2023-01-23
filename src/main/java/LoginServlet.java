@@ -9,13 +9,10 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("userName");
-        String password = request.getParameter("password");
-        request.setAttribute("username", name);
-        request.setAttribute("password",password);
-        request.getRequestDispatcher("/profile.jsp").forward(request,response);
+       request.getRequestDispatcher("/login.jsp").forward(request, response);
 
-
+    }
+    protected void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException {
     }
 
 }
