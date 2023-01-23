@@ -13,20 +13,20 @@
     <title>Brittney's Pizza Shack</title>
 </head>
 <body>
-<form action="/pizza-order.jsp" method="POST">
+<form action="/pizza-order" method="POST">
     <h1>Pizza Order Form</h1>
         <br>
     <h2>Crust Type</h2>
     <select name ="crust">
-        <option name="pan">Pan</option>
-        <option name="hand-tossed">Hand-Tossed</option>
+        <option>Pan</option>
+        <option>Hand-Tossed</option>
     </select>
         <br>
     <h2>Sauce Type</h2>
     <select name="sauce">
-        <option name="red">Marinara</option>
-        <option name="pesto">Pesto</option>
-        <option name="four">Four-cheese</option>
+        <option>Marinara</option>
+        <option>Pesto</option>
+        <option>Four-cheese</option>
     </select>
         <br>
     <h2>Toppings</h2>
@@ -35,11 +35,11 @@
     <h4>meat-lovers</h4><input type="checkbox" name="meats">
         <br>
     <label>Pizza Size</label>
-    <select>
-        <option name="small">Small</option>
-        <option name="medium">Medium</option>
-        <option name="large">Large</option>
-        <option name="extra">Extra-Large</option>
+    <select name = "size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Extra-Large</option>
     </select>
     <h2>Please enter your address</h2>
     <input type="text" name="address">
