@@ -13,6 +13,9 @@
     <title>Title</title>
 </head>
 <body>
+<%--The login.JSP goes with form actions so when users visit that url, they can see the login page or form on a JSP mapped to thay url.
+Then that Get method gets mapped to the "/login" NO JSP with a SERVLET that handles the request POST -> GET--%>
+
 <form method="post" action="/login.jsp">
     <label><p>Username</p></label>
     <input type="text" name="userName" placeholder="Enter Username" required/>
@@ -30,9 +33,9 @@
     </c:when>
 
 
-<%--    <c:when test="${true}">--%>
-<%--        <p>I am admin</p>--%>
-<%--    </c:when>--%>
+    <c:when test="${true}">
+        <p>I am admin</p>
+    </c:when>
 
     <c:when test="${request.getParameter('userName') != 'admin'}">
         I am not an admin
@@ -40,6 +43,7 @@
     <c:otherwise>
         <p>none of the above tests were true</p>
     </c:otherwise>
+
 
 
 </c:choose>
