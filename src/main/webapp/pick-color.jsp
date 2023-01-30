@@ -15,7 +15,7 @@
     <h2>Please enter your favorite color below!</h2>
     <form action="/pick-color" method="post">
         <input name="color" type="text"/>
-        <button>Submit</button>
+        <button type="submit" formmethod="post">Submit</button>
     </form>
 </form>
 </body>
